@@ -1,6 +1,7 @@
-assignment: Registrovanje prodaje internet-paketa
-iz kursa: **JavaFX** 
-za modul: JavaFX funkcionalnosti
+> [!IMPORTANT]
+> assignment: Registrovanje prodaje internet-paketa\
+iz kursa: **JavaFX**\
+za modul: JavaFX funkcionalnosti<br/>
 
 # Postavka zadataka:
 
@@ -8,24 +9,24 @@ Potrebno je napraviti formu za registrovanje prodaje internet-paketa.
 
 Internet-paket se sastoji iz sledećih parametara:
 
-brzina;
-protok;
-trajanje ugovora;
-ime i prezime korisnika;
-adresa korisnika.
++ brzina;
++ protok;
++ trajanje ugovora;
++ ime i prezime korisnika;
++ adresa korisnika<br/>
 
 Pritom:
 
-Brzina interneta (u Mbit/s) može biti 2, 5, 10, 20, 50 ili 100.
-Protok interneta (u GB) može biti 1, 5, 10 ili 100 ili "Flat".
-Trajanje ugovora može biti jedna ili dve godine.
-Ime, prezime i adresa korisnika se upisuju kao tekst.
+* Brzina interneta (u Mbit/s) može biti 2, 5, 10, 20, 50 ili 100.
+* Protok interneta (u GB) može biti 1, 5, 10 ili 100 ili "Flat".
+* Trajanje ugovora može biti jedna ili dve godine.
+* Ime, prezime i adresa korisnika se upisuju kao tekst.<br/>
 
 Potrebno je omogućiti evidenciju kreiranja ugovora i prodatih paketa i to:
 
-pregled svih prodaja; 
-dodavanje novih prodaja;
-brisanje postojećih prodaja.
+- pregled svih prodaja;
+- dodavanje novih prodaja;<br/>
+- brisanje postojećih prodaja<br/>
 
 # Arhitektura aplikacije
 
@@ -35,17 +36,17 @@ Standardni i visoko preporučeni pristup za izradu ovog zadatka je korišćenje 
 
 Zadatak je kompletan Maven Java projekat.
 
-# Osnovna logika i model:
+## Osnovna logika i model:
 
 Potrebno je implementirati kompletan model (klasu za internet-paket) sa JavaFX Properties i osnovni kontroler koji omogućava sledeće operacije, sa ispisom rezultata u konzoli:
 
 Dodavanje novog paketa (podaci mogu biti statički definisani u kodu).
 Prikaz (ispis) svih unetih paketa.
 
-# Kompletan korisnički interfejs:
+## Kompletan korisnički interfejs:
 
 Nadograditi rešenje kreiranjem kompletnog korisničkog interfejsa pomoću FXML-a. Interfejs treba da sadrži sva polja za unos (tekstualna polja, ChoiceBox ili ComboBox za brzinu/protok) i dugmad. Logika iz kontrolera treba da bude povezana sa interfejsom tako da se podaci unose preko forme.
 
-# Prikaz podataka u tabeli i brisanje:
+## Prikaz podataka u tabeli i brisanje:
 
 Nadograditi rešenje tako da se svi uneti paketi prikazuju u TableView kontroli. Tabela treba da bude povezana (bind) sa ObservableList-om u kontroleru. Omogućiti brisanje selektovanog reda iz tabele.
