@@ -1,5 +1,5 @@
 assignment: Registrovanje prodaje internet-paketa
-iz kursa: JavaFX 
+iz kursa: **JavaFX** 
 za modul: JavaFX funkcionalnosti
 
 # Postavka zadataka:
