@@ -1,0 +1,163 @@
+/* Modern dark palette
+   background: #23282D (dark slate)
+   surface:    #1E2428
+   primary:    #1E88E5 (blue)
+   accent:     #00BFA5 (teal)
+   danger:     #FF5252 (red)
+   muted text: #B0BEC5
+   strong text:#FFFFFF
+*/
+
+.root, .anchor-pane, .split-pane {
+    -fx-background-color: #23282D; /* page bg */
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+}
+
+/* Title (use styleClass="title" on header Label) */
+.title {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/* Inputs (unified) */
+.text-field, .combo-box {
+    -fx-background-color: #1E2428; /* surface */
+    -fx-border-color: #3A454B; /* subtle border */
+    -fx-border-width: 1;
+    -fx-text-fill: #E6EEF3; /* near-white */
+    -fx-padding: 6 8;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+/* Focus / hover — same border width to avoid layout shift */
+.text-field:focused, .combo-box:focused,
+.text-field:hover, .combo-box:hover {
+    -fx-border-color: #1E88E5; /* primary blue */
+    -fx-effect: none;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #1E88E5; /* primary */
+    -fx-text-fill: white;
+    -fx-padding: 6 12;
+    -fx-font-size: 13px;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.button:hover {
+    -fx-background-color: #2f9cf0;
+}
+
+.button:pressed {
+    -fx-background-color: #166fc1;
+}
+
+/* Small "ghost" icon-only button style (optional) */
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 4;
+}
+
+/* Close (special) */
+#closeBtn {
+    -fx-graphic: url('icons/close_16dp.png');
+    -fx-background-color: #FF5252; /* danger */
+    -fx-border-width: 0;
+    -fx-padding: 6;
+    -fx-min-width: 32;
+    -fx-min-height: 32;
+    -fx-background-radius: 6;
+}
+
+#closeBtn:hover {
+    -fx-background-color: #ff3b3b;
+}
+
+#saveBtn {
+    -fx-graphic: url('icons/save_20dp.png');
+}
+#deleteBtn {
+    -fx-graphic: url('icons/delete_20dp.png');
+}
+
+#clearPackageBtn {
+    -fx-graphic: url('icons/layers_clear_20dp.png');
+}
+#clearPersonBtn {
+    -fx-graphic: url('icons/format_clear_20dp.png');
+}
+
+/* ComboBox popup items (ensure visible without hover) */
+.combo-box-popup .list-view {
+    -fx-background-color: #1E2428;
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-text-fill: #E6EEF3;
+    -fx-background-color: transparent;
+    -fx-padding: 6 10;
+}
+
+/* Strong/high-contrast selection for popup */
+.combo-box-popup .list-view .list-cell:selected,
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #0069C0; /* stronger blue */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Table */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: #1E2428;
+}
+
+.table-view .column-header {
+    -fx-background-color: #2A3135;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #E6EEF3;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+}
+
+.table-cell {
+    -fx-text-fill: #E6EEF3;
+    -fx-padding: 8 10;
+    -fx-border-color: #2A3135;
+    -fx-border-width: 0 0 1 0;
+    -fx-text-alignment: center;
+}
+
+/* high-contrast row selection */
+.table-row-cell:selected, .table-cell:selected {
+    -fx-background-color: #0069C0;
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+}
+
+/* Scrollbar small tweaks */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #1E88E5;
+}
+
+/* small helpers */
+.vbox {
+    -fx-spacing: 8;
+}

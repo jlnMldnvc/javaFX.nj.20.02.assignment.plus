@@ -17,17 +17,23 @@ public class MainApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        /*URL fxmlUrl = getClass().getResource("/my/persons_ui-view.fxml");
-        HBox root = new FXMLLoader(fxmlUrl).load();*/
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/my/netpackage_view.fxml"));
+        AnchorPane root = fxmlLoader.load();
+        //
+        Scene scene = new Scene(root, 1100, 600);
 
-        URL fxmlUrl = getClass().getResource("/my/persons_ui-view.fxml");
-        AnchorPane root = FXMLLoader.<AnchorPane>load(fxmlUrl);
-
-        Scene scene = new Scene(root);
-        scene.getStylesheets().add("style.css");
+        // load CSS from resources/my/style.css
+        URL css = getClass().getResource("/my/style.css");
+        if (css != null) scene.getStylesheets().add(css.toExternalForm());
 
         stage.initStyle(StageStyle.UNDECORATED);
+        stage.setTitle("Net Package Registration System");
         stage.setScene(scene);
+
+        // min window size
+        stage.setMinWidth(1000);
+        stage.setMinHeight(500);
+
         stage.show();
 
         scene.setOnMousePressed(event -> {
