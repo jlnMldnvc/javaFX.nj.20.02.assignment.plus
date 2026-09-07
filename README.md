@@ -89,22 +89,86 @@ module-info.java
 - Launcher.java                // Entry point
 - MainApplication.java         // Scene i CSS
 
+## KLJUČNE TEHNIKE 
+✅ Property Binding
+✅ ObservableList
+✅ CellValueFactory
+✅ Validacija
+✅ Independent Instances
+
+## 📊 ZAHTEVI ZADATKA
+
+Za Ocenu 3/5 ✅ 
+ Model (Person, NetPackage),
+ JavaFX Properties,
+ Kontroler (dodavanje, ispis),
+ Validacija,
+ Ispis u konzolu
+ 
+Za Ocenu 4/5 ✅ 
+ FXML interfejs,
+ Sva polja za unos,
+ ComboBox-ovi za izbor,
+ Buttons za akcije,
+ CSS stilizacija
+ 
+Za Ocenu 5/5 ✅ 
+ TableView sa paketima,
+ ObservableList binding,
+ Brisanje paketa,
+ Refresh tabele,
+ Kompletan sistem
+
+## 🧪 Speed testing
+1. Pokreni aplikaciju: mvn javafx:run
+2. Prikaži se sample data (3 paketa) ✓
+3. Dodaj novi paket - pojavljuje se u tabeli ✓
+4. Odaberi paket - klikni Delete - briše se ✓
+5. Clear Person - briše person polja ✓
+6. Clear Package - briši package polja ✓
+7. Provera validacije - stavi prazna polja - error! ✓
+
+## 🎓 ŠTa POSEBNO ŠTITI  PROJEKAT
+
+* Sample Data - Tabela nije prazna pri pokretanju
+* Separate Clear Buttons - Clear Person i Clear Package
+* Binding - Čist kod bez ručnog kopiranja
+* Independent Instances - Svaki paket je nezavisan
+* Null Checks - Nema NPE (NullPointerException)
+* Error Handling - Sve greške su uhvaćene
+* Professional UI - Tamna tema sa hoover efektima
+* Complete Validation - Pre čuvanja se validira
+
+## 🎁 BONUS KARAKTERISTIKE U  KODU
+✅ Draggable window (scene drag listeners)
+✅ Undecorated stage (moderni izgled)
+✅ Try-catch za close button ikonu
+✅ Sample data pri pokretanju
+✅ Helper safe() metoda za TextField
+✅ Separate clear buttons (UX best practice)
+✅ Null checks u CellValueFactory (error prevention)
+
 ## 🚀 Getting Started
-
 ### Prerequisites
--JDK 17+
--Apache Maven
-
+- JDK 17+
+- Apache Maven
 ### Running the Application
 1.Clone the repository:
-
 ```Bash
 git clone https://github.com/jlnMldnvc/fx.nj.20.02.sb.git
 cd fx.nj.20.02.sb
 ```
 2.Run via Maven:
-
 ```Bash
 mvn clean javafx:run
 ```
+### 📞 BRZE PROVERE 
+- Projekat se kompajlira bez greške: mvn clean compile
+- Pokušaj: mvn javafx:run
+- Tabela prikazuje sample data
+- Dodaj novi paket - pojavljuje se
+- Obriši paket - uklanja se
+- Validacija radi - stavi prazno polje
+- Close button radi - prozor se zatvara
+
 ##📸 Screenshots
