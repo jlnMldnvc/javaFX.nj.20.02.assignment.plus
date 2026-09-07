@@ -1,16 +1,13 @@
 # 🌐 Internet Package Sales Tracker (`java-fx-sales-tracker`)
 
 A JavaFX desktop application built for registering, viewing, and managing internet service package contracts. Designed with **JavaFX (FXML)** and **SceneBuilder** following the strict **Model-View-Controller (MVC)** architectural pattern.
-
 ---
-
 ## ✨ Features
-
 - 📝 **New Contract Registration:** Form with input validation for adding new sales contracts.
 - 📊 **Table View Overview:** Displays all registered contracts in a dynamic `TableView` control bound to an `ObservableList`.
 - 🗑️ **Delete Sales Record:** Allows quick removal of any selected contract row from the table.
 - 📐 **MVC Architecture:** Complete decoupling of FXML UI, Controller logic, and Domain Model using JavaFX Properties.
-
+---
 ## 📋 Data Model Parameters
 
 Each internet package subscription contains the following specified attributes:
@@ -19,17 +16,12 @@ Each internet package subscription contains the following specified attributes:
 - **Bandwidth (GB):** 1, 5, 10, 100, or "Flat"
 - **Contract Duration:** 1 Year or 2 Years
 - **User Information:** Full Name (Ime i prezime) & Address (Adresa)
-
 ---
-
 ## 🛠 Tech Stack
-
 - **Language:** Java (JDK 17+)
 - **UI Framework:** JavaFX (Controls, TableView, FXML, SceneBuilder)
 - **Build System:** Maven
-
 ---
-
 ## 📁 Project Structure
 
 ```text
@@ -55,49 +47,42 @@ pom.xml
 .gitignore
 module-info.java
 ```
+---
 ## 🎯 KEY POINTS
-
 1. Model Klase
-
 - Person.java          // 4 Properties + validacija
 - NetPackage.java      // 5 Properties sa Person
 - Gender.java          // Enum za pol
 - Speed.java           // Enum za brzinu
 - Bandwidth.java       // Enum za protok
 - Duration.java        // Enum za trajanje
-
 2. Controller
-
 - NetPackageController.java    // Sve čini pravo
 - initialize()               // Popuni ComboBoxove
 - saveNetPackage()           // Dodaj paket
 - deleteNetPackage()         // Obriši paket
 - clearNetPackage()          // Čisti paket polja
 - clearPerson()              // Čisti person polja
-  
 3. UI (FXML)
-
 - netpackage_view.fxml         // Odličan layout
 - GridPane za formu          // 4 kolone
 - ComboBox-ovi za enume      // Speed, Bandwidth, Duration
 - TableView sa 7 kolona      // Sve potrebne kolone
 - CSS stilovi                // Tamna tema
-  
 4. Utility Klase
-
 - ShowAlerts.java              // Za error i info poruke
 - Launcher.java                // Entry point
 - MainApplication.java         // Scene i CSS
-
+---
 ## KLJUČNE TEHNIKE 
+
 ✅ Property Binding
 ✅ ObservableList
 ✅ CellValueFactory
 ✅ Validacija
 ✅ Independent Instances
-
+---
 ## 📊 ZAHTEVI ZADATKA
-
 Za Ocenu 3/5 ✅ 
  Model (Person, NetPackage),
  JavaFX Properties,
@@ -118,7 +103,7 @@ Za Ocenu 5/5 ✅
  Brisanje paketa,
  Refresh tabele,
  Kompletan sistem
-
+---
 ## 🧪 Speed testing
 1. Pokreni aplikaciju: mvn javafx:run
 2. Prikaži se sample data (3 paketa) ✓
@@ -127,9 +112,8 @@ Za Ocenu 5/5 ✅
 5. Clear Person - briše person polja ✓
 6. Clear Package - briši package polja ✓
 7. Provera validacije - stavi prazna polja - error! ✓
-
+---
 ## 🎓 ŠTa POSEBNO ŠTITI  PROJEKAT
-
 * Sample Data - Tabela nije prazna pri pokretanju
 * Separate Clear Buttons - Clear Person i Clear Package
 * Binding - Čist kod bez ručnog kopiranja
@@ -138,8 +122,9 @@ Za Ocenu 5/5 ✅
 * Error Handling - Sve greške su uhvaćene
 * Professional UI - Tamna tema sa hoover efektima
 * Complete Validation - Pre čuvanja se validira
-
+---
 ## 🎁 BONUS KARAKTERISTIKE U  KODU
+
 ✅ Draggable window (scene drag listeners)
 ✅ Undecorated stage (moderni izgled)
 ✅ Try-catch za close button ikonu
@@ -147,7 +132,7 @@ Za Ocenu 5/5 ✅
 ✅ Helper safe() metoda za TextField
 ✅ Separate clear buttons (UX best practice)
 ✅ Null checks u CellValueFactory (error prevention)
-
+---
 ## 🚀 Getting Started
 ### Prerequisites
 - JDK 17+
@@ -162,6 +147,7 @@ cd fx.nj.20.02.sb
 ```Bash
 mvn clean javafx:run
 ```
+---
 ### 📞 BRZE PROVERE 
 - Projekat se kompajlira bez greške: mvn clean compile
 - Pokušaj: mvn javafx:run
@@ -170,5 +156,5 @@ mvn clean javafx:run
 - Obriši paket - uklanja se
 - Validacija radi - stavi prazno polje
 - Close button radi - prozor se zatvara
-
-##📸 Screenshots
+---
+## 📸 Screenshots
