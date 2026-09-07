@@ -33,17 +33,62 @@ Each internet package subscription contains the following specified attributes:
 ## 📁 Project Structure
 
 ```text
-src/
-└── main/
-    ├── java/
-    │   └── com/example/
-    │       ├── controller/    # JavaFX Controllers
-    │       ├── model/         # Package domain model with JavaFX Properties
-    │       └── Main.java      # Application entry point
-    └── resources/
-        ├── views/             # FXML layout files
-        └── styles/            # CSS styling files
+src/main/java/my/
+  ├── Launcher.java      # Application entry point
+  ├── MainApplication.java
+  ├── models/         # Package domain models with JavaFX Properties
+  │   ├── Person.java
+  │   ├── NetPackage.java
+  │   ├── Gender.java
+  │   ├── Speed.java
+  │   ├── Bandwidth.java
+  │   └── Duration.java
+  └── controllers/    # JavaFX Controllers
+      ├── NetPackageController.java
+      └── ShowAlerts.java
+
+src/main/resources/my/
+  ├── netpackage_view.fxml             # FXML layout file
+  └── style.css            # CSS styling file
+
+pom.xml
+.gitignore
+module-info.java
 ```
+## 🎯 KEY POINTS
+
+1. Model Klase
+
+- Person.java          // 4 Properties + validacija
+- NetPackage.java      // 5 Properties sa Person
+- Gender.java          // Enum za pol
+- Speed.java           // Enum za brzinu
+- Bandwidth.java       // Enum za protok
+- Duration.java        // Enum za trajanje
+
+2. Controller
+
+- NetPackageController.java    // Sve čini pravo
+- initialize()               // Popuni ComboBoxove
+- saveNetPackage()           // Dodaj paket
+- deleteNetPackage()         // Obriši paket
+- clearNetPackage()          // Čisti paket polja
+- clearPerson()              // Čisti person polja
+  
+3. UI (FXML)
+
+- netpackage_view.fxml         // Odličan layout
+- GridPane za formu          // 4 kolone
+- ComboBox-ovi za enume      // Speed, Bandwidth, Duration
+- TableView sa 7 kolona      // Sve potrebne kolone
+- CSS stilovi                // Tamna tema
+  
+4. Utility Klase
+
+- ShowAlerts.java              // Za error i info poruke
+- Launcher.java                // Entry point
+- MainApplication.java         // Scene i CSS
+
 ## 🚀 Getting Started
 
 ### Prerequisites
