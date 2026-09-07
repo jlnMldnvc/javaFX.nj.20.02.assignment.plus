@@ -208,40 +208,29 @@ java -jar target/javafx-sales-tracker-1.0-SNAPSHOT.jar
 
 ---
 
-## 📖 Documentation
-
-For detailed documentation, see:
-- [CSS & FXML Improvements](./docs/CSS_FXML_IMPROVEMENTS.md)
-- [Advanced JavaFX Concepts](./docs/ADVANCED_CONCEPTS.md)
-- [Code Review & Analysis](./docs/PROJECT_REVIEW.md)
-- [Icon Suggestions](./docs/ICON_SUGGESTIONS.md)
-
----
-
 ## 🎨 Modern Color Palette
 
 ```
-Primary Background:  #0f172a (Dark Navy)
-Secondary:           #1e293b (Dark Slate)
-Accent 1:            #06b6d4 (Cyan)
-Accent 2:            #8b5cf6 (Purple)
-Danger:              #ef4444 (Red)
-Success:             #10b981 (Green)
-Warning:             #f59e0b (Orange)
-Text:                #f1f5f9 (Light)
+   background: #23282D (dark slate)
+   surface:    #1E2428
+   primary:    #1E88E5 (blue)
+   accent:     #00BFA5 (teal)
+   danger:     #FF5252 (red)
+   muted text: #B0BEC5
+   strong text:#FFFFFF
 ```
 
 ---
 
 ## 🎯 Button Actions
 
-| Button | Action | Color | Icon |
-|--------|--------|-------|------|
-| **Save Package** | Add new contract | Green (#10b981) | 💾 |
-| **Delete Selected** | Remove selected | Red (#ef4444) | 🗑️ |
-| **Clear Person** | Clear person fields | Orange (#f59e0b) | ❌ |
-| **Clear Package** | Clear package fields | Orange (#f59e0b) | 🔄 |
-| **Close** | Exit application | Red (#ef4444) | ✕ |
+| Button | Action | 
+|--------|--------|
+| **Save Package** | Add new contract | 
+| **Delete Selected** | Remove selected | 
+| **Clear Person** | Clear person fields | 
+| **Clear Package** | Clear package fields | 
+| **Close** | Exit application | 
 
 ---
 
