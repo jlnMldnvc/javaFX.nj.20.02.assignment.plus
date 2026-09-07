@@ -158,3 +158,5 @@ mvn clean javafx:run
 - Close button radi - prozor se zatvara
 ---
 ## 📸 Screenshots
+<img width="1089" height="599" alt="Screenshot 2026-09-07 135617" src="https://github.com/user-attachments/assets/3847d6e9-fd8a-4f2d-a050-1fa9eb4bba86" />
+<img width="1079" height="428" alt="Screenshot 2026-09-07 135757" src="https://github.com/user-attachments/assets/9a1709cd-7548-4131-a35f-7b88d884d203" />
