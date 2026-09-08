@@ -142,9 +142,13 @@ public class NetPackageController implements Initializable {
     }
 
     private void setAllImages() {
+        setImage("/my/icons/person_text_20dp.png", personFirstNameColumn);
+        setImage("/my/icons/article_person_20dp.png", personLastNameColumn);
         setImage("/my/icons/speed_20dp.png", speedColumn);
+        setImage("/my/icons/wc_20dp.png", genderColumn);
         setImage("/my/icons/location_city_20dp.png", addressColumn);
         setImage("/my/icons/calendar_month_20dp.png", durationColumn);
+        setImage("/my/icons/web_traffic_20dp.png", bandwidthColumn);
         setImage("/my/icons/alternate_email_20dp.png", personEmailColumn);
     }
 

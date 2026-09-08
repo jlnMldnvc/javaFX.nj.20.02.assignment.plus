@@ -24,6 +24,7 @@ public class MainApplication extends Application {
 
         // load CSS from resources/my/style.css
         URL css = getClass().getResource("/my/style.css");
+        //URL css = getClass().getResource("/my/style_final_adjusted.css");
         if (css != null) scene.getStylesheets().add(css.toExternalForm());
 
         stage.initStyle(StageStyle.UNDECORATED);
