@@ -92,11 +92,10 @@ module-info.java                     # Java Modules
 **Starting point:** an introductory JavaFX exercise (registering internet service packages in a TableView).
 
 **What I added:**
-- [e.g. MVC refactoring with separate model/controller/view packages]
-- [e.g. property binding for live totals]
-- [e.g. input validation and error messages]
-- [e.g. persistence to file/database]
-- [e.g. Maven build, JDK 17+, JavaFX 21]
+- [MVC refactoring with separate model/controller/view packages]
+- [property binding for live totals]
+- [input validation and error messages]
+- [Maven build, JDK 17+, JavaFX 21]
 
 ## What this project demonstrates
 JavaFX, MVC, property binding, TableView, Maven.
@@ -225,23 +224,6 @@ java -jar target/javafx-sales-tracker-1.0-SNAPSHOT.jar
 | **Clear Package** | Clear package fields | 
 | **Close** | Exit application | 
 
----
-
-## 📄 License
-
-This project is available for educational purposes.
-
----
-
-## 👨‍💻 Author
-
-**Jelena Mladenović**
-
----
-
-## 🤝 Contributing
-
-For bug reports or suggestions, please open a GitHub Issue.
 
 ---
 
@@ -287,10 +269,6 @@ After studying this project, you will understand:
 - **UI Components:** 4 (Form, Buttons, Table, ComboBoxes)
 - **Design Patterns:** MVC
 - **Build Time:** ~10 seconds
-
----
-
-**Last Updated:** September 2026
 
 ---
 
