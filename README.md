@@ -87,26 +87,19 @@ module-info.java                     # Java Modules
 
 ---
 
-## ✅ Requirements Implementation
+## Origin and my contribution
 
-### Grade 3/5 ✅
-- [x] Model classes with JavaFX Properties
-- [x] Controller with add and display functionality
-- [x] Data validation
-- [x] Console output (System.out.println)
+**Starting point:** an introductory JavaFX exercise (registering internet service packages in a TableView).
 
-### Grade 4/5 ✅
-- [x] FXML interface with all input fields
-- [x] ComboBoxes for enumerations
-- [x] Buttons for all actions
-- [x] CSS styling
+**What I added:**
+- [e.g. MVC refactoring with separate model/controller/view packages]
+- [e.g. property binding for live totals]
+- [e.g. input validation and error messages]
+- [e.g. persistence to file/database]
+- [e.g. Maven build, JDK 17+, JavaFX 21]
 
-### Grade 5/5 ✅
-- [x] TableView with packages
-- [x] ObservableList binding
-- [x] Delete package functionality
-- [x] Table refresh mechanism
-- [x] Complete MVC system
+## What this project demonstrates
+JavaFX, MVC, property binding, TableView, Maven.
 
 ---
 
